@@ -1,0 +1,41 @@
+/* Animated Dots */
+.animated-dot {
+  position: absolute;
+  border-radius: 50%;
+  animation: float-around 30s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floating-character {
+  position: absolute;
+  animation: float-around 30s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floating-element {
+  position: absolute;
+  border-radius: 50%;
+  animation: float-around 20s ease-in-out infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes float-around {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(100px, 50px) rotate(90deg);
+  }
+  50% {
+    transform: translate(50px, 100px) rotate(180deg);
+  }
+  75% {
+    transform: translate(-50px, 50px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}

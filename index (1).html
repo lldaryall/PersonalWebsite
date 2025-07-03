@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darya Pylypenko | Computer Science</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animated-elements.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="noise"></div>
+  
+  <div class="background-elements"></div>
+  <div class="animated-characters"></div>
+  
+  <header>
+    <a href="#home" class="logo" onclick="scrollToTop()">DP</a>
+  </header>
+
+  <main class="modular-layout">
+  <!-- Left Column - Personal Info -->
+  <section class="personal-info-column cloud-panel">
+    <div class="personal-info">
+      <div class="avatar-container">
+        <div class="avatar">
+          <img src="avatar.jpeg" alt="Darya Pylypenko" id="avatar-img">
+        </div>
+      </div>
+      
+      <div class="personal-header">
+        <h1 class="glitch" data-text="Darya Pylypenko">Darya Pylypenko</h1>
+        <div class="subtitle">
+          <span class="typing"></span>
+        </div>
+      </div>
+      
+      <div class="personal-description">
+        B.S./M.S. Computer Science student at FSU with research in algorithms and systems. WiCS President with experience in C++, MIPS, and web dev; seeking software engineering, AI research, and quantitative development opportunities.
+      </div>
+      
+      <div class="credentials-section">
+        <h3>Current Status</h3>
+        <div class="credentials-list">
+          <div class="credential-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>B.S./M.S. Fast-Track</span>
+          </div>
+          <div class="credential-item">
+            <i class="fas fa-award"></i>
+            <span>AWS Cloud Practitioner</span>
+          </div>
+          <div class="credential-item">
+            <i class="fas fa-users"></i>
+            <span>WICS President</span>
+          </div>
+          <div class="credential-item">
+            <i class="fas fa-star"></i>
+            <span>3.7 GPA</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="languages-section">
+        <h3>Languages</h3>
+        <div class="languages-list">
+          <span class="language-badge">🇺🇸 English</span>
+          <span class="language-badge">🇺🇦 Ukrainian</span>
+          <span class="language-badge">🇮🇹 Italian</span>
+          <span class="language-badge">🇷🇺 Russian</span>
+          <span class="language-badge">🇪🇸 Spanish</span>
+        </div>
+      </div>
+      
+      <div class="location-section">
+        <h3>Location</h3>
+        <div class="location-info">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Tallahassee, FL</span>
+        </div>
+      </div>
+      
+      <div class="quick-contact">
+        <h3>Quick Contact</h3>
+        <div class="quick-contact-list">
+          <a href="https://www.linkedin.com/in/darya-pylypenko-24288b207" target="_blank" class="quick-contact-item">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:daryap101@gmail.com" class="quick-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>daryap101@gmail.com</span>
+          </a>
+          <a href="tel:+19412750410" class="quick-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+1 941-275-0410</span>
+          </a>
+          <a href="https://github.com/lldaryall" target="_blank" class="quick-contact-item">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Right Column - Card Interface -->
+  <section class="card-interface">
+    <!-- Tab Navigation -->
+    <div class="tab-navigation">
+      <button class="tab-button active" data-tab="about">
+        <i class="fas fa-user"></i> About Me
+      </button>
+      <button class="tab-button" data-tab="education">
+        <i class="fas fa-graduation-cap"></i> Education
+      </button>
+      <button class="tab-button" data-tab="experience">
+        <i class="fas fa-briefcase"></i> Experience
+      </button>
+      <button class="tab-button" data-tab="projects">
+        <i class="fas fa-code"></i> Projects
+      </button>
+      <button class="tab-button" data-tab="skills">
+        <i class="fas fa-tools"></i> Skills
+      </button>
+      <button class="tab-button" data-tab="contact">
+        <i class="fas fa-envelope"></i> Contact
+      </button>
+    </div>
+    
+    <!-- Content Area -->
+    <div class="content-area">
+      <!-- About Me Content -->
+      <div class="tab-content active" id="about-content">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+          <div class="about-intro">
+            <div class="intro-text">
+              <p>
+                Hi! I'm Darya — a B.S./M.S. Computer Science student at Florida State University on a fast-tracked 5-year pathway, with a strong interest in systems, algorithms, and data-driven technologies.
+              </p>
+              <p>
+                I'm currently conducting research through both UROP and Directed Individual Study (DIS), focused on algorithmic optimization, systems-level computing, and the intersection of AI and performance. My academic work is complemented by hands-on experience in C++, MIPS, Python, and full-stack web development.
+              </p>
+              <p>
+                As President of Women in Computer Science (WiCS), I lead technical workshops, mentorship programs, and community events that foster collaboration and accessibility in tech. I'm passionate about building tools that are efficient, scalable, and grounded in real-world impact — whether that's low-level systems software or AI-assisted applications.
+              </p>
+            </div>
+          </div>
+          
+          <div class="about-grid">
+            <div class="about-card">
+              <div class="card-icon">
+                <i class="fas fa-target"></i>
+              </div>
+              <h3>Current Focus</h3>
+              <div class="focus-items">
+                <div class="focus-item">
+                  <i class="fas fa-microchip"></i>
+                  <span>Systems-level computing</span>
+                </div>
+                <div class="focus-item">
+                  <i class="fas fa-code-branch"></i>
+                  <span>Algorithmic optimization</span>
+                </div>
+                <div class="focus-item">
+                  <i class="fas fa-robot"></i>
+                  <span>AI & performance research</span>
+                </div>
+                <div class="focus-item">
+                  <i class="fas fa-users"></i>
+                  <span>Leading WiCS initiatives</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="about-card">
+              <div class="card-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h3>Exploring Topics</h3>
+              <div class="focus-items">
+                <div class="focus-item">
+                  <i class="fas fa-brain"></i>
+                  <span>Reinforcement learning</span>
+                </div>
+                <div class="focus-item">
+                  <i class="fas fa-cogs"></i>
+                  <span>Rust programming</span>
+                </div>
+                <div class="focus-item">
+                  <i class="fas fa-chart-line"></i>
+                  <span>Quantitative modeling</span>
+                </div>
+                <div class="focus-item">
+                  <i class="fas fa-server"></i>
+                  <span>CUDA/GPU computing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-card interests-card">
+            <div class="card-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Interests & Activities</h3>
+            <div class="interests-grid">
+              <div class="interest-item">
+                <i class="fas fa-dumbbell"></i>
+                <span>Weightlifting</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-table-tennis"></i>
+                <span>Tennis</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-palette"></i>
+                <span>Art</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-hands-helping"></i>
+                <span>Volunteering</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-running"></i>
+                <span>Marathons</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-laptop-code"></i>
+                <span>Compiler Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Content -->
+      <div class="tab-content" id="education-content">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="education-container">
+          <div class="education-card primary">
+            <div class="education-header">
+              <div class="school-logo">
+                <i class="fas fa-university"></i>
+              </div>
+              <div class="school-info">
+                <h3>Florida State University</h3>
+                <p class="location">Tallahassee, FL</p>
+                <p class="dates">August 2022 - May 2027 (Expected)</p>
+              </div>
+              <div class="gpa-badge">
+                <span class="gpa-label">GPA</span>
+                <span class="gpa-value">3.7</span>
+              </div>
+            </div>
+            
+            <div class="degrees-section">
+              <h4>Degrees Pursuing</h4>
+              <div class="degrees-grid">
+                <div class="degree-item">
+                  <i class="fas fa-laptop-code"></i>
+                  <span>B.S./M.S. Computer Science (5-year fast track)</span>
+                </div>
+                <div class="degree-item">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Minor in Business</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="achievements-section">
+              <h4>Academic Achievements</h4>
+              <div class="achievements-list">
+                <div class="achievement-item">
+                  <i class="fas fa-medal"></i>
+                  <span>President's List</span>
+                </div>
+                <div class="achievement-item">
+                  <i class="fas fa-trophy"></i>
+                  <span>Dean's List</span>
+                </div>
+                <div class="achievement-item">
+                  <i class="fas fa-flask"></i>
+                  <span>UROP Scholar</span>
+                </div>
+                <div class="achievement-item">
+                  <i class="fas fa-award"></i>
+                  <span>STRIVE Award</span>
+                </div>
+                <div class="achievement-item">
+                  <i class="fas fa-star"></i>
+                  <span>Phi Sigma Theta Honor Society</span>
+                </div>
+                <div class="achievement-item">
+                  <i class="fas fa-crown"></i>
+                  <span>Society for Collegiate Leadership & Achievement</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="involvement-section">
+              <h4>Campus Involvement</h4>
+              <div class="involvement-grid">
+                <div class="involvement-item">
+                  <i class="fas fa-female"></i>
+                  <span>Women in Computer Science (WiCS) - President</span>
+                </div>
+                <div class="involvement-item">
+                  <i class="fas fa-flask"></i>
+                  <span>Undergraduate Research Opportunity Program (UROP)</span>
+                </div>
+                <div class="involvement-item">
+                  <i class="fas fa-code"></i>
+                  <span>Association for Computing Machinery (ACM)</span>
+                </div>
+                <div class="involvement-item">
+                  <i class="fas fa-shield-alt"></i>
+                  <span>Cybersecurity Club</span>
+                </div>
+                <div class="involvement-item">
+                  <i class="fas fa-cloud"></i>
+                  <span>Cloud Computing Club</span>
+                </div>
+                <div class="involvement-item">
+                  <i class="fas fa-table-tennis"></i>
+                  <span>Tennis Club</span>
+                </div>
+                <div class="involvement-item">
+                  <i class="fas fa-flag"></i>
+                  <span>Italian Club</span>
+                </div>
+                <div class="involvement-item">
+                  <i class="fas fa-globe"></i>
+                  <span>IATP Club</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="certifications-section">
+            <h3>Certifications</h3>
+            <div class="cert-card">
+              <div class="cert-icon">
+                <i class="fab fa-aws"></i>
+              </div>
+              <div class="cert-info">
+                <h4>AWS Certified Cloud Practitioner</h4>
+                <p>Amazon Web Services</p>
+                <p class="cert-date">Issued 2024</p>
+              </div>
+              <div class="cert-badge">
+                <i class="fas fa-certificate"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Experience Content -->
+      <div class="tab-content" id="experience-content">
+        <h2 class="section-title">Experience</h2>
+        
+        <div class="experience-container">
+          <div class="experience-section">
+            <div class="section-header">
+              <i class="fas fa-briefcase"></i>
+              <h3>Research & Leadership</h3>
+            </div>
+            
+            <div class="experience-item">
+              <div class="experience-icon">
+                <i class="fas fa-flask"></i>
+              </div>
+              <div class="experience-content">
+                <h4>Research Assistant</h4>
+                <p class="position">Department of Computer Science, FSU</p>
+                <p class="date">August 2025 - Present</p>
+                <div class="responsibilities">
+                  <ul>
+                    <li>Undergraduate researcher through FSU's UROP program, exploring algorithms, systems design, and low-level computing under faculty mentorship</li>
+                    <li>Conducting research on algorithmic optimization and systems-level computing</li>
+                    <li>Investigating the intersection of AI and performance computing</li>
+                    <li>Applying theoretical concepts to practical implementations</li>
+                  </ul>
+                </div>
+                <div class="tech-used">
+                  <span class="tech-tag">C++</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">MIPS</span>
+                  <span class="tech-tag">Algorithms</span>
+                  <span class="tech-tag">Systems Design</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="experience-item">
+              <div class="experience-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="experience-content">
+                <h4>Women in Computer Science (WiCS)</h4>
+                <p class="position">President</p>
+                <p class="date">April 2025 - Present</p>
+                <div class="responsibilities">
+                  <ul>
+                    <li>Lead a student organization promoting diversity in tech through coding workshops, mentorship, and networking events</li>
+                    <li>Organize technical talks and collaborate with industry partners</li>
+                    <li>Support members' professional development in STEM</li>
+                    <li>Foster collaboration and accessibility in tech through community events</li>
+                    <li>Lead mentorship programs for underrepresented students in computer science</li>
+                  </ul>
+                </div>
+                <div class="tech-used">
+                  <span class="tech-tag">Leadership</span>
+                  <span class="tech-tag">Event Planning</span>
+                  <span class="tech-tag">Mentorship</span>
+                  <span class="tech-tag">Technical Workshops</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="experience-section">
+            <div class="section-header">
+              <i class="fas fa-heart"></i>
+              <h3>Community Involvement</h3>
+            </div>
+            
+            <div class="experience-item">
+              <div class="experience-icon">
+                <i class="fas fa-ribbon"></i>
+              </div>
+              <div class="experience-content">
+                <h4>ACS Quarter Auctions</h4>
+                <p class="position">Volunteer</p>
+                <p class="date">July 2019 - May 2024</p>
+                <div class="responsibilities">
+                  <ul>
+                    <li>Partnered with local "quarter auction" vendors and ran pop-up bake-sale tables to raise funds for the American Cancer Society</li>
+                    <li>Handled event logistics—vendor outreach, item cataloguing, and cash-box reconciliation</li>
+                    <li>Contributing to five years of successful cancer-research drives</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="experience-item">
+              <div class="experience-icon">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <div class="experience-content">
+                <h4>Teaching Aide</h4>
+                <p class="position">Volunteer</p>
+                <p class="date">August 2018 - May 2023</p>
+                <div class="responsibilities">
+                  <ul>
+                    <li>Logged 400+ hours assisting at local Middle School during after-school programs and summer sessions</li>
+                    <li>Tutored students one-on-one in math and science</li>
+                    <li>Helped prepare classroom materials and supported teachers with grading and activity supervision</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="experience-item">
+              <div class="experience-icon">
+                <i class="fas fa-ribbon"></i>
+              </div>
+              <div class="experience-content">
+                <h4>Relay for Life</h4>
+                <p class="position">Treasurer</p>
+                <p class="date">January 2018 - October 2024</p>
+                <div class="responsibilities">
+                  <ul>
+                    <li>Managed budgeting, fundraising, and financial reporting for cancer awareness events</li>
+                    <li>Oversaw donations and tracked expenditures</li>
+                    <li>Collaborated with team leads to support successful charity initiatives</li>
+                    <li>Maintained financial transparency and accountability for community stakeholders</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="experience-item">
+              <div class="experience-icon">
+                <i class="fas fa-fish"></i>
+              </div>
+              <div class="experience-content">
+                <h4>Mote Marine</h4>
+                <p class="position">Volunteer</p>
+                <p class="date">September 2019 - July 2023</p>
+                <div class="responsibilities">
+                  <ul>
+                    <li>Assisted with marine conservation efforts through beach cleanups and wildlife monitoring</li>
+                    <li>Participated in educational outreach programs</li>
+                    <li>Contributed to environmental sustainability projects aimed at protecting marine life</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Projects Content -->
+      <div class="tab-content" id="projects-content">
+        <h2 class="section-title">Projects</h2>
+        
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-store"></i>
+              </div>
+              <div class="project-title">
+                <h3>Coppola Artistica Website</h3>
+                <div class="project-links">
+                  <a href="https://github.com/lldaryall" target="_blank" class="project-link" title="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" target="_blank" class="project-link" title="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p>A full-featured e-commerce site for an Italian tile business, developed using WordPress and WooCommerce with custom product pages and backend management.</p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Custom product pages</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-database"></i>
+                  <span>PHP & MySQL backend</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-search"></i>
+                  <span>Multi-platform SEO</span>
+                </div>
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">WordPress</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">Photoshop</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-dragon"></i>
+              </div>
+              <div class="project-title">
+                <h3>PokéSim C++ Game</h3>
+                <div class="project-links">
+                  <a href="https://github.com/lldaryall/Pokemon-GO" target="_blank" class="project-link" title="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p>A terminal-based game written in C++ that simulates a simplified Pokémon experience with creature encounters, turn-based battles, and disk-based save system.</p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fas fa-gamepad"></i>
+                  <span>Turn-based battles</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-save"></i>
+                  <span>File handling & persistence</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-random"></i>
+                  <span>Randomization system</span>
+                </div>
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Unix</span>
+                <span class="tech-tag">Structs</span>
+                <span class="tech-tag">File I/O</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <div class="project-title">
+                <h3>AWS Certification Training</h3>
+                <div class="project-links">
+                  <a href="https://github.com/lldaryall/Quirlet" target="_blank" class="project-link" title="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p>A terminal-based application written in C++ that simulates a simplified Quizlet for AWS certification preparation with multiple study formats.</p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fas fa-cards-blank"></i>
+                  <span>Flashcard system</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-question-circle"></i>
+                  <span>Multiple choice quizzes</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-file-alt"></i>
+                  <span>Practice tests</span>
+                </div>
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Unix</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">CLI</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <div class="project-title">
+                <h3>MIPS Assembly Projects</h3>
+                <div class="project-links">
+                  <a href="https://github.com/lldaryall" target="_blank" class="project-link" title="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p>Collection of low-level programming projects in MIPS assembly language, focusing on memory management, register operations, and system calls.</p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fas fa-memory"></i>
+                  <span>Memory management</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-cogs"></i>
+                  <span>Register operations</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-terminal"></i>
+                  <span>System calls</span>
+                </div>
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">MIPS</span>
+                <span class="tech-tag">Assembly</span>
+                <span class="tech-tag">QtSPIM</span>
+                <span class="tech-tag">Low-level</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="project-title">
+                <h3>Personal Portfolio Website</h3>
+                <div class="project-links">
+                  <a href="https://github.com/lldaryall" target="_blank" class="project-link" title="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://lldaryall.vercel.app/" target="_blank" class="project-link" title="Live Site">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p>Modern, responsive portfolio website built with vanilla HTML, CSS, and JavaScript. Features interactive animations, chatbot integration, and mobile-first design. <em>Yes, you are looking at the project right now! 😄</em></p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fas fa-mobile-alt"></i>
+                  <span>Responsive design</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-robot"></i>
+                  <span>Interactive chatbot</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-paint-brush"></i>
+                  <span>Modern animations</span>
+                </div>
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive Design</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="project-title">
+                <h3>Algorithmic Research Projects</h3>
+                <div class="project-links">
+                  <a href="https://github.com/lldaryall" target="_blank" class="project-link" title="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p>Academic research projects focused on algorithmic optimization, computational efficiency, and systems-level performance improvements.</p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <span>Performance optimization</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-project-diagram"></i>
+                  <span>Algorithm design</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-file-alt"></i>
+                  <span>Research documentation</span>
+                </div>
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Algorithms</span>
+                <span class="tech-tag">Research</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Skills Content -->
+      <div class="tab-content" id="skills-content">
+        <h2 class="section-title">Skills & Technologies</h2>
+        
+        <div class="skills-container">
+          <div class="skills-category">
+            <div class="category-header">
+              <i class="fas fa-code"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <span>C++</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-hashtag"></i>
+                <span>C#</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-microchip"></i>
+                <span>MIPS</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-php"></i>
+                <span>PHP</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-terminal"></i>
+                <span>Bash</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skills-category">
+            <div class="category-header">
+              <i class="fas fa-layer-group"></i>
+              <h3>Frameworks & Libraries</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-wordpress"></i>
+                <span>WordPress</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-shopping-cart"></i>
+                <span>WooCommerce</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <span>Next.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3"></i>
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-table"></i>
+                <span>Pandas</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skills-category">
+            <div class="category-header">
+              <i class="fas fa-tools"></i>
+              <h3>Tools & Technologies</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-aws"></i>
+                <span>AWS</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <span>VS Code</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-linux"></i>
+                <span>Unix</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Google Maps API</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-ebay"></i>
+                <span>eBay API</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-microchip"></i>
+                <span>QtSPIM</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skills-category">
+            <div class="category-header">
+              <i class="fas fa-palette"></i>
+              <h3>Design & Creative</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-adobe"></i>
+                <span>Adobe Suite</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-palette"></i>
+                <span>Canva</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-image"></i>
+                <span>Photoshop</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-file-excel"></i>
+                <span>Excel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <div class="category-header">
+              <i class="fas fa-brain"></i>
+              <h3>Core Competencies</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fas fa-robot"></i>
+                <span>Machine Learning</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Quantitative Analysis</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-brain"></i>
+                <span>Artificial Intelligence</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Data Analytics</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-sitemap"></i>
+                <span>Data Structures</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-code-branch"></i>
+                <span>Algorithms</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-puzzle-piece"></i>
+                <span>Problem Solving</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-users"></i>
+                <span>Collaboration</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-comments"></i>
+                <span>Communication</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-user-tie"></i>
+                <span>Leadership</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-sync-alt"></i>
+                <span>Adaptability</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-clock"></i>
+                <span>Time Management</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-terminal"></i>
+                <span>CLI Tools</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-file-import"></i>
+                <span>File I/O</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Content -->
+      <div class="tab-content" id="contact-content">
+        <h2 class="section-title">Contact Me</h2>
+        
+        <div class="contact-container">
+          <div class="contact-hero">
+            <div class="hero-content">
+              <i class="fas fa-handshake"></i>
+              <h3>Let's Connect!</h3>
+              <p>I'm actively seeking opportunities where I can contribute to high-performance teams, deepen my knowledge of modern computing systems, and apply technical rigor to solve meaningful challenges — especially in fields like software engineering, AI research, and quantitative development.</p>
+            </div>
+          </div>
+          
+          <div class="contact-grid">
+  <div class="contact-card">
+    <div class="card-icon">
+      <i class="fas fa-envelope"></i>
+    </div>
+    <h3>Email</h3>
+    <a href="mailto:daryap101@gmail.com" class="contact-link">
+      daryap101@gmail.com
+    </a>
+    <p>Best for professional inquiries and opportunities</p>
+  </div>
+  
+  <div class="contact-card">
+    <div class="card-icon">
+      <i class="fas fa-phone"></i>
+    </div>
+    <h3>Phone</h3>
+    <a href="tel:+19412750410" class="contact-link">
+      +1 (941) 275-0410
+    </a>
+    <p>Available for calls and quick conversations</p>
+  </div>
+  
+  <div class="contact-card">
+    <div class="card-icon">
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <h3>LinkedIn</h3>
+    <a href="https://www.linkedin.com/in/darya-pylypenko-24288b207" target="_blank" class="contact-link">
+      Connect with me
+    </a>
+    <p>Professional networking and career updates</p>
+  </div>
+  
+  <div class="contact-card">
+    <div class="card-icon">
+      <i class="fab fa-github"></i>
+    </div>
+    <h3>GitHub</h3>
+    <a href="https://github.com/lldaryall" target="_blank" class="contact-link">
+      View my code
+    </a>
+    <p>Explore my projects and contributions</p>
+  </div>
+</div>
+          
+          <div class="collaboration-section">
+            <div class="collaboration-card">
+              <i class="fas fa-rocket"></i>
+              <h3>Seeking Opportunities In</h3>
+              <div class="interests-tags">
+                <span class="interest-tag">
+                  <i class="fas fa-laptop-code"></i>
+                  Software Engineering
+                </span>
+                <span class="interest-tag">
+                  <i class="fas fa-brain"></i>
+                  AI Research
+                </span>
+                <span class="interest-tag">
+                  <i class="fas fa-chart-line"></i>
+                  Quantitative Development
+                </span>
+                <span class="interest-tag">
+                  <i class="fas fa-microchip"></i>
+                  Systems Programming
+                </span>
+                <span class="interest-tag">
+                  <i class="fas fa-code-branch"></i>
+                  Algorithmic Optimization
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- Chatbot with Interactive Face -->
+  <div class="chatbot" id="chatbot">
+    <div class="chatbot-icon" id="chatbot-icon">
+      <div class="chatbot-face">
+        <div class="chatbot-eyes">
+          <div class="eye left-eye">
+            <div class="pupil"></div>
+          </div>
+          <div class="eye right-eye">
+            <div class="pupil"></div>
+          </div>
+        </div>
+        <div class="chatbot-mouth"></div>
+      </div>
+    </div>
+    <div class="chatbot-bubble cloud-bubble" id="chatbot-bubble">
+      <p>Hey there! 👋 Got questions?</p>
+    </div>
+    <div class="chatbot-window cloud-panel" id="chatbot-window">
+      <div class="chatbot-header">
+        <h4>Chat with Darya's Assistant</h4>
+        <button class="close-button" id="close-chatbot">&times;</button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="message bot-message">
+          <p>Hi there! 👋 I'm Darya's virtual assistant. How can I help you today?</p>
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input type="text" id="user-message" placeholder="Type your question here...">
+        <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="emoji-rain" id="emoji-rain"></div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Darya Pylypenko. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
