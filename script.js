@@ -336,12 +336,12 @@ document.addEventListener("DOMContentLoaded", () => {
         // Remove typing indicator
         typingIndicator.remove()
 
-        // Fallback to local responses if API is unavailable
-        const assistantResponse = getChatbotResponse(userMessage)
-        const assistantMessageElement = document.createElement("div")
-        assistantMessageElement.className = "message bot-message"
-        assistantMessageElement.innerHTML = `<p>${assistantResponse}</p>`
-        messagesContainer.appendChild(assistantMessageElement)
+        // Show error message instead of falling back to local responses
+        console.error('API Error:', error)
+        const errorMessageElement = document.createElement("div")
+        errorMessageElement.className = "message bot-message error"
+        errorMessageElement.innerHTML = `<p>Sorry, I'm having trouble connecting to the AI service. Please make sure the backend is running and try again. Error: ${error.message}</p>`
+        messagesContainer.appendChild(errorMessageElement)
 
         // Scroll to bottom
         messagesContainer.scrollTop = messagesContainer.scrollHeight
@@ -628,11 +628,13 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(createEmoji, i * 200)
   }
 
-  // Avatar placeholder
+  // Avatar placeholder - only create if the actual image fails to load
   const avatarImg = document.getElementById("avatar-img")
 
-  // Set a placeholder image if the actual image fails to load
-  avatarImg.onerror = function() {
+  // Only set up placeholder if the image fails to load
+  avatarImg.addEventListener('error', function() {
+    console.log('Avatar image failed to load, creating placeholder')
+    
     // Create a canvas for a placeholder avatar
     const canvas = document.createElement("canvas")
     const ctx = canvas.getContext("2d")
@@ -715,7 +717,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.matchMedia) {
       window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateAvatarPlaceholder)
     }
-  }
+  })
+
+  // Check if avatar loaded successfully
+  avatarImg.addEventListener('load', function() {
+    console.log('Avatar image loaded successfully')
+  })
 
   // Initialize - show all fade-in elements
   revealElements.forEach((element) => {
