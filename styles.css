@@ -1575,6 +1575,41 @@ header {
   transform: scale(1.1);
 }
 
+/* Typing indicator styles */
+.message.typing {
+  opacity: 0.7;
+}
+
+.typing-dots {
+  display: inline-block;
+  animation: typing 1.4s infinite;
+}
+
+.typing-dots::after {
+  content: '';
+  animation: typing 1.4s infinite;
+}
+
+@keyframes typing {
+  0%, 20% {
+    content: '';
+  }
+  40% {
+    content: '.';
+  }
+  60% {
+    content: '..';
+  }
+  80%, 100% {
+    content: '...';
+  }
+}
+
+.message.error {
+  background: rgba(255, 0, 0, 0.1);
+  border-left: 3px solid #ff4444;
+}
+
 /* Emoji Rain */
 .emoji-rain {
   position: fixed;

@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Handle sending messages
-  function sendMessage() {
+  async function sendMessage() {
     const userMessage = userMessageInput.value.trim()
 
     if (userMessage) {
@@ -294,9 +294,49 @@ document.addEventListener("DOMContentLoaded", () => {
       // Scroll to bottom
       messagesContainer.scrollTop = messagesContainer.scrollHeight
 
-      // Simulate assistant typing
-      setTimeout(() => {
-        // Add assistant response
+      // Show typing indicator
+      const typingIndicator = document.createElement("div")
+      typingIndicator.className = "message bot-message typing"
+      typingIndicator.innerHTML = '<p><span class="typing-dots">...</span></p>'
+      messagesContainer.appendChild(typingIndicator)
+      messagesContainer.scrollTop = messagesContainer.scrollHeight
+
+      try {
+        // Send message to backend API
+        const apiUrl = window.location.hostname === 'localhost' ? 'http://localhost:3001/api/chat' : '/api/chat';
+        const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ message: userMessage })
+        })
+
+        // Remove typing indicator
+        typingIndicator.remove()
+
+        if (response.ok) {
+          const data = await response.json()
+          const assistantMessageElement = document.createElement("div")
+          assistantMessageElement.className = "message bot-message"
+          assistantMessageElement.innerHTML = `<p>${data.response}</p>`
+          messagesContainer.appendChild(assistantMessageElement)
+        } else {
+          const errorData = await response.json()
+          const errorMessageElement = document.createElement("div")
+          errorMessageElement.className = "message bot-message error"
+          errorMessageElement.innerHTML = `<p>Sorry, I'm having trouble connecting right now. ${errorData.error || 'Please try again later.'}</p>`
+          messagesContainer.appendChild(errorMessageElement)
+        }
+
+        // Scroll to bottom
+        messagesContainer.scrollTop = messagesContainer.scrollHeight
+
+      } catch (error) {
+        // Remove typing indicator
+        typingIndicator.remove()
+
+        // Fallback to local responses if API is unavailable
         const assistantResponse = getChatbotResponse(userMessage)
         const assistantMessageElement = document.createElement("div")
         assistantMessageElement.className = "message bot-message"
@@ -305,7 +345,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Scroll to bottom
         messagesContainer.scrollTop = messagesContainer.scrollHeight
-      }, 1000)
+      }
     }
   }
 
@@ -591,8 +631,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Avatar placeholder
   const avatarImg = document.getElementById("avatar-img")
 
-  // Set a placeholder image if no image is provided
-  if (avatarImg.getAttribute("src") === "avatar-placeholder.jpg") {
+  // Set a placeholder image if the actual image fails to load
+  avatarImg.onerror = function() {
     // Create a canvas for a placeholder avatar
     const canvas = document.createElement("canvas")
     const ctx = canvas.getContext("2d")

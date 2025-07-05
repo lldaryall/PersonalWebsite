@@ -62,6 +62,16 @@ OPENAI_API_KEY=your_actual_api_key_here
 PORT=3001
 ```
 
+### For GitHub Pages Deployment
+
+If you're deploying to GitHub Pages, you'll need to set up the backend separately since GitHub Pages only serves static files. You can:
+
+1. Deploy the backend to a service like Heroku, Railway, or Vercel
+2. Update the API URL in `script.js` to point to your deployed backend
+3. Set the `OPENAI_API_KEY` environment variable in your backend deployment platform
+
+The frontend will automatically use the correct API endpoint based on the environment.
+
 ## File Structure
 
 ```
