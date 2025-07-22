@@ -31,10 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const typingElement = document.querySelector(".typing")
   const phrases = [
     "Computer Science Major",
-    "Applied Mathematics Major",
     "Business Minor",
     "AWS Certified",
-    "WICS President at FSU",
+    "WiCS President at FSU",
+    "Research Assistant",
   ]
   let phraseIndex = 0
   let charIndex = 0
@@ -631,9 +631,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Avatar placeholder - only create if the actual image fails to load
   const avatarImg = document.getElementById("avatar-img")
 
-  // Only set up placeholder if the image fails to load
-  avatarImg.addEventListener('error', function() {
-    console.log('Avatar image failed to load, creating placeholder')
+  // Function to create placeholder avatar
+  function createAvatarPlaceholder() {
+    console.log('Creating avatar placeholder')
     
     // Create a canvas for a placeholder avatar
     const canvas = document.createElement("canvas")
@@ -717,12 +717,36 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.matchMedia) {
       window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateAvatarPlaceholder)
     }
+  }
+
+  // Check if avatar image exists and loads properly
+  function checkAvatarImage() {
+    const img = new Image()
+    img.onload = function() {
+      console.log('Avatar image loaded successfully')
+      // If the image loads successfully, use it
+      avatarImg.src = "avatar.svg"
+    }
+    img.onerror = function() {
+      console.log('Avatar image failed to load, creating placeholder')
+      createAvatarPlaceholder()
+    }
+    img.src = "avatar.svg"
+  }
+
+  // Set up error handler as backup
+  avatarImg.addEventListener('error', function() {
+    console.log('Avatar image error event triggered')
+    createAvatarPlaceholder()
   })
 
   // Check if avatar loaded successfully
   avatarImg.addEventListener('load', function() {
     console.log('Avatar image loaded successfully')
   })
+
+  // Initialize avatar check
+  checkAvatarImage()
 
   // Initialize - show all fade-in elements
   revealElements.forEach((element) => {
